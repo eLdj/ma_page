@@ -1,0 +1,222 @@
+
+#tout{
+    width: 900px;
+    margin-left: 200px;
+	margin-right: 200px;
+}
+
+#logo img{
+	border: 2px solid black;
+	width: 150px;
+	height: 90px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+#menu > ul{
+    margin-left: 130px;
+    padding: 0px;
+}
+
+#menu > ul > li{
+    float: left;
+    position: relative;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+#menu li{
+    list-style-type: none;
+}
+
+.submit{
+    display: none;
+}
+
+#menu{
+    width: 100%;
+    background:linear-gradient(#7A2C1F,#997834);
+}
+
+
+#menu > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#menu a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+#menu > ul > li > a{
+    padding: 20px 30px;
+    color: blue;
+}
+
+#menu li:hover .submit{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 100000;
+}
+
+.submit li{
+    border-bottom: 1px solid #ccc;
+}
+
+.submit li a{
+padding: 15px 30px;
+font-size: 13px;
+color: #222538;
+width: 270px;
+}
+
+.menu1:hover{
+    border-top: 5px solid #e44d26;
+    background-color: RGBa(228, 77, 38, 0.15);
+}
+
+.menu2:hover{
+    border-top: 5px solid #0070bb;
+    background-color: RGBa(000, 112, 192, 0.15);
+}
+
+.menu3:hover{
+    border-top: 5px solid #f1dc4f;
+    background-color: RGBa(220, 220, 220, 0.15);
+}
+
+.menu4:hover{
+    border-top: 5px solid green;
+    background-color: RGBa(100, 220, 220, 0.15);
+}
+
+#menu > ul > li:hover a{
+    padding: 15px 30px 20px 30px;
+}
+
+.menu1 .submit{
+    background-color: RGB(230, 100, 40);
+}
+
+.menu2 .submit{
+    background-color: RGB(000, 160, 240);
+}
+
+.menu3 .submit{
+    background-color: RGB(251, 216, 99);
+}
+
+.menu4 .submit{
+    background-color: RGB(100, 216, 99);
+}
+
+.submit li:hover a{
+    color:#EEE;
+    font-weight: bold;
+}
+
+.menu1 .submit li:hover{
+    background-color: RGB(210, 77, 60);
+}
+
+.menu2 .submit li:hover{
+    background-color: RGB(000, 115, 200);
+}
+
+.menu3 .submit li:hover{
+    background-color: RGB(200, 165, 75);
+}
+
+.menu4 .submit li:hover{
+    background-color: RGB(100, 215, 80);
+}
+.corps1 {
+	width: 48%;
+	height: 440px;
+	border: 2px solid black;
+	margin-top: 2px;
+	text-align: center;
+	line-height: 420px;
+}
+
+.corps2{
+	width: 50.7%;
+	height: 250px;
+	border: 2px solid blue;
+	position: relative;
+	top: -445px;
+	right: -440px;
+	text-align: center;
+	line-height: 240px;
+}
+
+.corps3{
+	border: 2px solid blue;
+	width: 50.7%;
+	height: 174px;
+	position: relative;
+	top: -432px;
+	right: -440px;
+	text-align: center;
+	line-height: 174px;
+}
+
+.clear{
+    clear: both;
+}
+
+#pieds{
+    border: solid 2px black;
+    position: relative;
+    top: -434px;
+    height: 60px;
+}
+
+#pieds ul li{
+    float: left;
+    list-style-type: none;
+    margin-left: 125px;
+    border : solid 2px black;
+    height: 20px;
+    width: 100px;
+}
+
+#pieds ul li a{
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+@media screen and (max-width: 899px){
+    #tout{
+        width: 100%;
+    }
+
+    img{
+        width: 15%;
+    }
+
+    #menu{
+        width: 25%;
+    }
+
+    .menu1{
+        width: 5%;
+    }
+
+    .menu2{
+        width: 5%;
+    }
+
+    .menu3{
+        width: 5%;
+    }
+
+    .menu4{
+        width: 5%;
+    }
+}
